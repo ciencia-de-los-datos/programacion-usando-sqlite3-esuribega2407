@@ -43,4 +43,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-
+SELECT d1.K0,AVG(d2.c21) AS 'avg(c21)' FROM tbl1 d1 JOIN (SELECT K1, c21 FROM tbl2)d2 ON (d1.K1 = d2.K1)  WHERE d1.c13 > 400 GROUP BY d1.K0 ORDER BY d1.K0;
